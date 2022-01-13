@@ -5,7 +5,61 @@ import Section from './Section'
 function Home() {
     return (
         <Container>
-            <Section/>
+            {/* Model S Section */}
+            <Section
+                title="Model S"
+                description="Order online for Touchless Delivery"
+                backgroundImg="model-s.jpg"
+                leftBtnText="Custom Order"
+                rightBtnText="Existing Inventory"
+            />
+            {/* Model Y Section */}
+            <Section
+                title="Model Y"
+                description="Order online for Touchless Delivery"
+                backgroundImg="model-y.jpg"
+                leftBtnText="Custom Order"
+                rightBtnText="Existing Inventory"
+            />
+            {/* Model 3 Section */}
+            <Section
+                title="Model 3"
+                description="Order online for Touchless Delivery"
+                backgroundImg="model-3.jpg"
+                leftBtnText="Custom Order"
+                rightBtnText="Existing Inventory"
+            />
+            {/* Model X Section */}
+            <Section
+                title="Model X"
+                description="Order online for Touchless Delivery"
+                backgroundImg="model-x.jpg"
+                leftBtnText="Custom Order"
+                rightBtnText="Existing Inventory"
+            />
+            {/* Solar Pannel Section */}
+            <Section
+                title="Lowest Cost Solar Panels in America"
+                description="Money-back Guarantee"
+                backgroundImg="solar-panel.jpg"
+                leftBtnText="Order Now"
+                rightBtnText="Learn More"
+            />
+            {/* Solar New Roofs Section */}
+            <Section
+                title="Solar for New Roofs"
+                description="Solar Roof Costs Less Than a New Rook Pluss Solar Panels"
+                backgroundImg="solar-roof.jpg"
+                leftBtnText="Order Now"
+                rightBtnText="Learn More"
+            />
+            {/* Accessories Section */}
+            <Section
+                title="Accessories"
+                description=""
+                backgroundImg="accessories.jpg"
+                leftBtnText="Shop Now"
+            />
         </Container>
     )
 }
