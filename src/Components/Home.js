@@ -12,6 +12,7 @@ function Home() {
                 backgroundImg="model-s.jpg"
                 leftBtnText="Custom Order"
                 rightBtnText="Existing Inventory"
+                haveArrow = "Yes"
             />
             {/* Model Y Section */}
             <Section

@@ -22,7 +22,9 @@ function Section(props) {
                     </ButtonGroup>
                 </Fade>
 
-                <DownArrow src="/images/down-arrow.svg"></DownArrow>
+                {props.haveArrow && 
+                    <DownArrow src="/images/down-arrow.svg"></DownArrow>
+                }
             </Buttons>
         </Wrap>
     )
