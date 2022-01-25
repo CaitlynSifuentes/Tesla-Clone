@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSelector } from 'react-redux';
@@ -12,7 +13,7 @@ function Header() {
 
     return (
         <Container>
-            <a>
+            <a href='/'>
                 <img src="/images/logo.svg" alt=""/>
             </a>
 
@@ -20,6 +21,8 @@ function Header() {
                 {cars && cars.map((car, index) =>( 
                     <a key={index} href="#">{car}</a>
                  ))}
+                <a href="#">Solar Roof</a>
+                <a href="#">Solar Panels</a>
             </Menu>
 
             <RightMenu>
@@ -57,7 +60,7 @@ const Container = styled.div`
     display: flex; // vertically
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
 `
 
 const Menu = styled.div`
@@ -68,7 +71,7 @@ const Menu = styled.div`
     
     a {
         font-weight: 600;
-        padding: 0 10px;
+        padding: 0 20px;
         flex-wrap: nowrap;
     }
 
